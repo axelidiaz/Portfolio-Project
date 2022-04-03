@@ -1,0 +1,230 @@
+/*  COLORS
+
+HEX 
+--jet: #353535ff;
+--ming: #3c6e71ff;
+--white: #ffffffff;
+--gainsboro: #d9d9d9ff;
+--indigo-dye: #284b63ff;
+
+HSL
+--jet: hsla(0, 0%, 21%, 1);
+--ming: hsla(183, 31%, 34%, 1);
+--white: hsla(0, 0%, 100%, 1);
+--gainsboro: hsla(0, 0%, 85%, 1);
+--indigo-dye: hsla(204, 42%, 27%, 1);
+
+*/
+
+/* FONTS
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+
+    font-family: 'Droid Serif', serif;
+    font-size: 15px;
+
+        font-family: 'Space Grotesk', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+
+*/
+
+html {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    background-color: #FFF;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 4.5rem;
+    color: #000000;
+}
+
+.name {
+    color: #48A9A6;
+}
+
+.mainWrapper {
+    display: grid;
+    width: 100%;
+    justify-items: center;
+}
+
+header {
+    display: grid;
+    width: 100%;
+    height: 5vh;
+    font-size: 1.5rem;
+    place-content: center;
+    background-color: #000000;
+    position: fixed;
+    box-shadow: 0 7px 20px 0 rgba(0,0,0,0.2),0 4px 10px 0 rgba(0,0,0,0.2);
+    z-index: 99;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    height: 100%;
+    margin:.2rem .4rem;
+}
+
+
+a {
+    color:  #d9d9d9;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+nav a:hover {
+    color: #48A9A6;
+    border-bottom: 3px solid #48A9A6;
+    transition: all 300ms ease;
+}
+
+/* ABOUT ME */
+
+.aboutMe {
+    display: grid;
+    width: 80%;
+    gap: 1rem;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows:auto auto;
+    margin-top: 10vh;
+    margin-bottom: 4rem;
+}
+
+.myName {
+    grid-area: 1 / 1 / 1 / span2;
+    text-align: center;
+    height: 15vh;
+}
+
+.aboutMeWords{
+    font-size: 1.5rem;
+    padding: 0 0 0 3.4rem;
+}
+
+.aboutMePhoto {
+    border: 2px solid white;
+    grid-area: 2 / 2 / 2 / 2;
+    padding-top: 1rem;
+}
+
+.aboutMePhoto img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    max-width: 325px;
+    max-height: 325px;
+    border: 4px solid #000000;
+}
+
+.projects {
+    display: grid;
+    width: 100%;
+    height: 60vh;
+    background-color: #000000;
+    justify-items: center;
+}
+
+.projects h1 {
+    color: #FFF;
+}
+
+.projectsCard {
+    width: 90%;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 6rem;
+}
+
+.contact {
+    display: grid;
+    height: 50vh;
+    width: 100%;
+    place-items: center;
+    margin-top: 10vh;
+}
+
+.form {
+    display: grid;
+    width: 60%;
+    place-items: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2rem;
+}
+
+
+input[type=text] {
+    display: block;
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 5px solid #000000;
+    padding-left: 5px;
+    outline: none;
+}
+
+.signup {
+    text-align: center;
+    width: 90%;
+}
+
+input[type=text]:focus {
+    border-bottom: 5px solid #48A9A6;
+}
+
+input[type=submit] {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    padding: 0 20px;
+    background: #48A9A6;
+    letter-spacing: 1px;
+    outline: none;
+    transition: 300ms all ease-in-out;
+    border: none;
+    box-shadow: 3px 3px 1px #000000, 3px 3px 1px 1px rgba(0,0,0,1)
+}
+
+input[type=submit]:hover {
+    background: #000000;
+    color: #FFF;
+}
+
+footer {
+    display: grid;
+    width: 100%;
+    background-color: #000000;
+    color: #FFF;
+    height: 20vh;
+    margin-top: 20vh;
+    place-items: center;
+}
+
+.footerText {
+    letter-spacing: .5rem;
+    font-size: 2rem;
+    transition: 300ms all ease-in-out;
+}
+footer i {
+    transition: 300ms all ease-in-out;
+}
+
+footer i:hover {
+    color: #48A9A6;
+    transition: 300ms all ease-in-out;
+}
