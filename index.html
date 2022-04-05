@@ -9,12 +9,13 @@
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"> 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet"> 
-<script src="https://kit.fontawesome.com/ad84e0c87b.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/ad84e0c87b.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -24,8 +25,8 @@
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -33,23 +34,25 @@
     <div class="myName">
       <h1>Hello, My name is <span class="name">Axel Diaz</span></h1>
     </div>
-    <div class="aboutMeWords"><p class="me">
-      I am a self-taught developer based in Southeastern Connecticut. After spending a decade plus in the foodservice industry working
-      in many roles from dishwasher, to cook, to bartender, and ultimately as a manager, and earning a bachelor's degree in Accounting,
-      I decided to carve my own path of entry into the world of IT.<br><br>
-
-      As an admirer of various arts including architecture, design, culinary, visual, and industrial, I prefer minimal, clean, and 
-      functional design crafted carefully to be accessible and user friendly.
-    </p></div>
-    <div class="aboutMePhoto"><img src="./img/casualavatar.jpg" alt="Profile Photo"></div>
+    <div class="aboutmeCard">
+      <div class="aboutMeWords"><p class="me">
+        I am a self-taught developer based in Southeastern Connecticut. After spending a decade plus in the foodservice industry working
+        in many roles from dishwasher, to cook, to bartender, and ultimately as a manager, and earning a bachelor's degree in Accounting,
+        I decided to carve my own path of entry into the world of IT.<br><br>
+  
+        As an admirer of various arts including architecture, design, culinary, visual, and industrial, I prefer minimal, clean, and 
+        functional design crafted carefully to be accessible and user friendly.
+      </p></div>
+      <div class="aboutMePhoto"><img src="./img/casualavatar.jpg" alt="Profile Photo"></div>
+    </div>
   </section>
-  <section class="projects">
+  <section class="projects" id="projects">
     <div class="projectsCard"><h1>frankly, I have no projects worth <span class="name">mentioning</span>. But stick around, I suspect I will 
       have <span class="name">much</span> to showcase
       in the near future...
     </h1></div>
   </section>
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="signup">
       <h1>Sign up for my <span class="name">fake</span> newsletter!</h1>
     </div>
@@ -66,6 +69,12 @@
       <i class="fa-brands fa-instagram-square fa-2xl"></i>
       <i class="fa-brands fa-git-square fa-2xl"></i>
       <i class="fa-brands fa-tiktok fa-2xl"></i>
+    </div>
+    <div class="credits">
+      <p>© 2022 Cozy Cub Media</p>
+    </div>
+    <div class="toTop">
+      <a href="#"><i class="fa-solid fa-circle-arrow-up fa-2xl" id="toTopButton"></i></a>
     </div>
   </footer>
 </main>
