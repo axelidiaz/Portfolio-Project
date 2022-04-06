@@ -2,7 +2,7 @@
 
 html {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     background-color: #FFF;
     scroll-behavior: smooth;
 }
@@ -12,7 +12,7 @@ html {
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    font-size: clamp(1rem, -.5rem + 10vw, 4.5rem);
+    font-size: 5.4vmax;
     color: #000000;
 }
 
@@ -44,8 +44,8 @@ nav a:hover {
 header {
     display: grid;
     width: 100%;
-    height: 5vh;
-    font-size: clamp(1rem, -.5rem + 4vw, 1.5rem);
+    height: 6vh;
+    font-size: 2vmax;
     place-content: center;
     background-color: #000000;
     position: fixed;
@@ -73,7 +73,7 @@ nav li {
     display: grid;
     width: 80%;
     grid-template-rows:auto auto;
-    margin-top: 10vh;
+    margin-top: 6vh;
     margin-bottom: 4vh;
 }
 
@@ -90,54 +90,95 @@ nav li {
 }
 
 .aboutMeWords{
+    display: grid;
     font-size: 1.5rem;
-    padding: 0 1rem 0 3.4rem;
+    padding: 0 1rem;
+    align-content: center;
+}
+
+.me {
+    margin: 0;
+}
+
+.contactButton {
+    width: 100%;
+    text-align: center;
+    padding: 1vw;
+}
+
+.viewPortfolio {
+    display: block;
+    margin: 0 auto;
+    line-height: 4vmax;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.7vmax;
+    padding: 0 20px;
+    background: #48A9A6;
+    letter-spacing: 1px;
+    outline: none;
+    transition: 300ms all ease-in-out;
+    border: none;
+    box-shadow: 3px 3px 1px #000000, 3px 3px 1px 1px rgba(0,0,0,1)
+}
+
+.viewPortfolio:hover {
+    background: #000000;
+    color: #FFF;
 }
 
 .aboutMePhoto {
     display: grid;
     place-content: center;
+    width: 100%;
 }
 
 .aboutMePhoto img {
-    object-fit: cover;
+    object-fit:cover;
     border-radius: 50%;
-    min-width: 325px;
-    max-width: 375px;
-    max-height: 325px;
-    max-height: 375px;
-    border: 4px solid #000000;
+    max-width: 325px;
+    height: auto;
 }
 
 /*/////////////////////////////////////  PROJECTS STYLES /////////////////////////////////////*/
 
 .projects {
     display: grid;
-    width: 100%;
+    grid-template-columns: auto;
     background-color: #000000;
     justify-items: center;
 }
 
 .projects h1 {
     color: #FFF;
+    font-size: 6vmax;
+    padding: 0;
+    margin: 0;
 }
 
 .projectsCard {
-    width: 90%;
+    box-sizing: border-box;
+    width: 100%;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     text-align: justify;
+    padding: 0 2vw;
 }
 
 /*/////////////////////////////////////  CONTACT STYLES /////////////////////////////////////*/
 
 .contact {
     display: grid;
-    height: 50vh;
     width: 100%;
     place-items: center;
-    margin-top: 10vh;
+    padding: 5vh 0;
+}
+
+.contact h1 {
+    font-size: 6vmax;
+}
+
+.signup {
 }
 
 .form {
@@ -145,9 +186,9 @@ nav li {
     width: 60%;
     place-items: center;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 2rem;
+    font-size: 2vmax;
+    padding: 1vh;
 }
-
 
 input[type=text] {
     display: block;
@@ -171,9 +212,9 @@ input[type=submit] {
     display: block;
     margin: 0 auto;
     margin-top: 10px;
-    line-height: 3rem;
+    line-height: 4vmax;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2.7vmax;
     padding: 0 20px;
     background: #48A9A6;
     letter-spacing: 1px;
@@ -193,23 +234,25 @@ input[type=submit]:hover {
 footer {
     display: grid;
     width: 100%;
+    grid-template-columns: auto;
     background-color: #000000;
     color: #FFF;
-    margin-top: 20vh;
     place-items: center;
-    padding: 2rem;
-    padding-bottom: 0;
+    padding: 2vh;
     box-sizing: border-box;
 }
 
 .toTop {
-    margin: 1.5rem 0;
-    font-size: 2rem;
+    margin: 2vh;
+    font-size: 2vmax;
+    height: 100%;
+    width: fit-content;
 }
 
 .footerText {
     letter-spacing: .5rem;
-    font-size: 1.5rem;
+    font-size: 2.5vmax;
+    padding: 1vh;
     transition: 300ms all ease-in-out;
 }
 footer i {
@@ -222,18 +265,24 @@ footer i:hover {
 }
 
 .credits {
-    padding: 0;
+    padding: 1vh;
     margin: 0;
     margin-top: 1rem;
+    font-size: 1.5vmax;
+    text-align: center;
 }
 
 /*/////////////////////////////////////  MEDIA QUERY STYLES /////////////////////////////////////*/
 
-@media only screen and (min-device-width:320px) and (max-device-width: 800px) {
+@media only screen and (min-device-width:320px) and (max-device-width: 840px) {
 
     div {
         box-sizing: border-box;
-        /* overflow: hidden; */
+        overflow: hidden;
+    }
+
+    * {
+        word-wrap: break-word;
     }
 
     .aboutMe {
@@ -241,8 +290,8 @@ footer i:hover {
         grid-template-columns: auto;
         width: 100%;
         margin: 0;
-        margin-bottom: 4vh;
         margin-top: 6vh;
+        margin-bottom: 6vh;
     }
 
     .aboutmeCard {
@@ -251,6 +300,7 @@ footer i:hover {
     }
 
     h1 {
+        font-size: 9vmax;
         padding: 0;
         margin: 0;
     }
@@ -262,14 +312,28 @@ footer i:hover {
         text-align: center;
         height: fit-content;
         margin-top: 3vh;
+        margin-bottom: 2vh;
     }
 
     .aboutMeWords {
         display: grid;
+        align-content: center;
         width: 100%;
         order: 3;
-        padding: 0 2vh;
-        font-size: 3vh;
+        padding: 0 3vw;
+        font-size: 3vmax;
+        text-align: justify;
+        margin-top: 2vh;
+    }
+
+    .me {
+        margin: 0;
+        padding: 1vw;
+    }
+
+    .me p {
+        margin: 0;
+        padding: 0;
     }
 
     .aboutMePhoto {
@@ -277,99 +341,7 @@ footer i:hover {
         order: 2;
         padding: 0;
         margin: 0;
-        height: fit-content;
     }
 
-    .projects {
-        display: grid;
-        width: 100%;
-        background-color: #000000;
-        justify-items: center;
-    }
     
-    .projects h1 {
-        color: #FFF;
-        font-size: 12vw;
-    }
-    
-    .projectsCard {
-        width: 100%;
-        padding: 0 2vh;
-        color: #fff;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 800;
-        text-align: justify;
-    }
 
-    .contact {
-        display: grid;
-        height: fit-content;
-        width: 100%;
-        place-items: center;
-    }
-
-    .contact h1 {
-        font-size: 12vw;
-        margin-bottom: 4vh;
-    }
-
-    .form {
-        display: grid;
-        width: 60%;
-        place-items: center;
-        font-family: 'Space Grotesk', sans-serif;
-        font-size: 1rem;
-        margin-bottom: 8vh;
-    }
-    
-    
-    input[type=text] {
-        display: block;
-        margin-bottom: 1rem;
-        border: none;
-        border-bottom: 5px solid #000000;
-        padding-left: 5px;
-        outline: none;
-        font-size: 2.5vh;
-    }
-
-    footer {
-        display: grid;
-        width: 100%;
-        margin: 0;
-        background-color: #000000;
-        color: #FFF;
-        place-items: center;
-        padding: 2rem;
-    }
-
-    .footer div {
-        height: fit-content;
-    }
-    
-    .toTop {
-        margin-top: 1rem;
-        margin-bottom: 0;
-        font-size: 2rem;
-    }
-    
-    .footerText {
-        letter-spacing: .5rem;
-        font-size: 1.5rem;
-        transition: 300ms all ease-in-out;
-    }
-    footer i {
-        transition: 300ms all ease-in-out;
-    }
-    
-    footer i:hover {
-        color: #48A9A6;
-        transition: 300ms all ease-in-out;
-    }
-    
-    .credits {
-        padding: 0;
-        margin: 0;
-        margin-top: 1rem;
-    }
-}
