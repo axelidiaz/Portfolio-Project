@@ -112,6 +112,7 @@ nav li {
     line-height: 4vmax;
     font-family: 'Montserrat', sans-serif;
     font-size: 2.7vmax;
+    color: #000000;
     padding: 0 20px;
     background: #48A9A6;
     letter-spacing: 1px;
@@ -213,6 +214,7 @@ input[type=submit] {
     margin: 0 auto;
     margin-top: 10px;
     line-height: 4vmax;
+    color: #000000;
     font-family: 'Montserrat', sans-serif;
     font-size: 2.7vmax;
     padding: 0 20px;
@@ -233,17 +235,17 @@ input[type=submit]:hover {
 
 footer {
     display: grid;
+    gap: 1.2vh;
     width: 100%;
     grid-template-columns: auto;
     background-color: #000000;
     color: #FFF;
     place-items: center;
-    padding: 2vh;
+    padding: 3vh;
     box-sizing: border-box;
 }
 
 .toTop {
-    margin: 2vh;
     font-size: 2vmax;
     height: 100%;
     width: fit-content;
@@ -252,7 +254,6 @@ footer {
 .footerText {
     letter-spacing: .5rem;
     font-size: 2.5vmax;
-    padding: 1vh;
     transition: 300ms all ease-in-out;
 }
 footer i {
@@ -265,9 +266,6 @@ footer i:hover {
 }
 
 .credits {
-    padding: 1vh;
-    margin: 0;
-    margin-top: 1rem;
     font-size: 1.5vmax;
     text-align: center;
 }
@@ -278,7 +276,6 @@ footer i:hover {
 
     div {
         box-sizing: border-box;
-        overflow: hidden;
     }
 
     * {
@@ -342,6 +339,3 @@ footer i:hover {
         padding: 0;
         margin: 0;
     }
-
-    
-
