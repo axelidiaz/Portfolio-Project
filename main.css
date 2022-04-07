@@ -26,7 +26,7 @@ a {
 nav a:hover {
     color: #48A9A6;
     border-bottom: 3px solid #48A9A6;
-    transition: all 300ms ease;
+    transition: all 200ms ease;
 }
 
 /*/////////////////////////////////////  HEADER STYLES /////////////////////////////////////*/
@@ -131,6 +131,7 @@ nav li {
     display: grid;
     place-content: center;
     width: 100%;
+    padding: 1vw;
 }
 
 .aboutMePhoto img {
@@ -172,14 +173,12 @@ nav li {
     display: grid;
     width: 100%;
     place-items: center;
-    padding: 5vh 0;
+    padding: 7vh 0;
 }
 
 .contact h1 {
     font-size: 6vmax;
-}
-
-.signup {
+    margin-top: 0;
 }
 
 .form {
