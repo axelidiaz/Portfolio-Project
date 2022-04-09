@@ -24,7 +24,7 @@ a {
 }
 
 nav a:hover {
-    color: #48A9A6;
+    color: hsl(178, 40%, 47%);
     border-bottom: 3px solid #48A9A6;
     transition: all 200ms ease;
 }
